@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* App container */
+.app {
+  min-height: 100vh;
+  width: 100%;
+  padding: 60px 20px;
+}
+
+/* Main card */
+.card {
+  background: #111827;
+  padding: 40px;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #f9fafb;
+}
+
+/* Form */
+.form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+/* Input */
+.input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #1f2937;
+  color: white;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Add Button */
+.button {
+  padding: 14px 22px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+/* Todo list */
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Todo item */
+.todo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #374151;
+  background: #1f2937;
+}
+
+/* Checkbox */
+.todo__status {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #9ca3af;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+}
+
+/* Text */
+.todo__text {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* Completed */
+.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+/* Delete button */
+.todo__delete {
+  border: none;
+  background: #ef4444;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo__delete:hover {
+  background: #dc2626;
+}
